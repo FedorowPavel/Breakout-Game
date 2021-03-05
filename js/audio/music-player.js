@@ -38,8 +38,8 @@ class MusicPlayer {
 
         tittle.innerText = song;
         
-        audio.src = `/${this.audioSrc}/${song}.mp3`;
-        cover.src = `/${this.coverSrc}/${song}.jpg`;
+        audio.src = `${this.audioSrc}/${song}.mp3`;
+        cover.src = `${this.coverSrc}/${song}.jpg`;
     }
 
     playSong() {
