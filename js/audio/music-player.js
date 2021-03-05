@@ -37,8 +37,9 @@ class MusicPlayer {
         const song = this.songList[this.currentSongIndex];
 
         tittle.innerText = song;
-        audio.src = `${this.audioSrc}/${song}.mp3`;
-        cover.src = `${this.coverSrc}/${song}.jpg`;
+        
+        audio.src = `/${this.audioSrc}/${song}.mp3`;
+        cover.src = `/${this.coverSrc}/${song}.jpg`;
     }
 
     playSong() {
