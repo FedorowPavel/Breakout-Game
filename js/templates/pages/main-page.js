@@ -25,6 +25,8 @@ const mainTemplate =
 </div>
 
 <div class="fact-container">
+
+    <small>Press any key to hide</small>
     
 </div>
 

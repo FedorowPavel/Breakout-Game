@@ -138,28 +138,48 @@
     background-color: $white;
     border: 2px solid $border-color;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
     z-index: 100;
     max-width: 500px;
 
     position: absolute;
-    top: 50%;
+    top: 56%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
 
     transition: all 0s;
     font-weight: bold;
 
+    small {
+      position: absolute;
+      right: 0;
+      bottom: -23px;
+      font-weight: 100;
+      color: $border-color;
+      padding: 4px;
+    }
+
     i {
-      float: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+      // float: left;
+      background-color: $white;
       font-size: 2rem;
-      padding-right: 5px;
     }
 
     &.show {
       // bottom: 20px;
       transition: all 0.3s ease;
       transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
     }
   }
 }
