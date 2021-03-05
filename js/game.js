@@ -116,7 +116,11 @@ class Game {
 }
 
 const temp = JSON.parse(storageService.get('game'))
-const playerName = temp.currentPlayer;
+
+let playerName;
+temp ? playerName = temp.currentPlayer : playerName = null;
+
+
 console.log(playerName);
 
 const game = new Game(playerName ? playerName : null);
