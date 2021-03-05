@@ -1,6 +1,5 @@
-import ball from "./canvas/objects/ball.js";
-import paddle from "./canvas/objects/paddle.js";
 import {
+
     FAST_BALL_dX,
     INITIAL_BALL_dX,
     INITIAL_PADDLE_WIDTH,
@@ -13,7 +12,6 @@ import {
 
 } from "./constants.js";
 
-import backToMain from "./go-to-main.js";
 import storageService from "./storage-service.js";
 
 class Game {
@@ -64,6 +62,7 @@ class Game {
                     break;
             }
 
+            return
         }
 
         if (ballSpeed === MIDDLE_BALL_dX) {
@@ -79,6 +78,7 @@ class Game {
                     break;
             }
 
+            return
         }
 
         if (ballSpeed === FAST_BALL_dX) {
@@ -94,6 +94,7 @@ class Game {
                     break;
             }
 
+            return
         }
 
     }
@@ -120,9 +121,6 @@ const temp = JSON.parse(storageService.get('game'))
 let playerName;
 temp ? playerName = temp.currentPlayer : playerName = null;
 
-
-console.log(playerName);
-
-const game = new Game(playerName ? playerName : null);
+const game = new Game(playerName);
 
 export default game;

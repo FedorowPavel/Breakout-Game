@@ -1,4 +1,5 @@
 import {
+
     INITIAL_CANVAS_COLOR,
     INITIAL_PADDLE_POS_X,
     INITIAL_PADDLE_POS_Y,
@@ -6,7 +7,6 @@ import {
     INITIAL_PADDLE_HEIGHT,
     INITIAL_PADDLE_SPEED,
     INITIAL_PADDLE_dX,
-
 
 } from '../../constants.js';
 
@@ -32,7 +32,6 @@ class Paddle {
 
         const ctx = canvas.getContext('2d');
 
-        // const paddle = JSON.parse(storageService.get('paddle'))
         ctx.beginPath();
         ctx.rect(this.posX, this.posY, this.width, this.height);
         ctx.fillStyle = INITIAL_CANVAS_COLOR;
@@ -42,7 +41,7 @@ class Paddle {
 
 
     setInitialPaddlePos() {
-        //settimout для того чтобы рендерилось после того как инициализируется канвас
+        //settimout to find canvas after its rendering in dom
         setTimeout(() => {
             this.posX = canvas.width / 2 - this.width / 2;
         }, 0)

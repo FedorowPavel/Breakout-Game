@@ -1,10 +1,12 @@
 import {
+
     INITIAL_CANVAS_COLOR,
     INITIAL_BALL_POS_X,
     INITIAL_BALL_POS_Y,
     INITIAL_BALL_dX,
     INITIAL_BALL_dY,
     INITIAL_BALL_RADIUS
+    
 } from '../../constants.js';
 
 import storageService from '../../storage-service.js';

@@ -1,14 +1,10 @@
 import storageService from "../storage-service.js";
-import recordsList from "./records.js";
 
 function renderRecords(countToShow) {
 
     const recordsListing = document.getElementById('records-list');
     
     const arrayOfRecords = JSON.parse(storageService.get('records'))
-
-
-    // const arrayOfRecords = recordsList.records;
 
     const sortedArray = arrayOfRecords.sort((a, b) => +a.record < +b.record ? 1 : -1);
 
@@ -36,10 +32,7 @@ function renderRecords(countToShow) {
             place++
 
         } 
-        
     })
-
-
 }
 
 export default renderRecords;

@@ -6,6 +6,4 @@ function goToSettings(intId) {
     return
 }
 
-
-
 export default goToSettings;

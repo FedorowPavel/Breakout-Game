@@ -1,7 +1,7 @@
-export const INDEX_URL = ['/', '/index.html'];
 export const MAIN_URL = ['/main'];
-export const SETTINGS_URL = ['/settings'];
 export const RECORDS_URL = ['/records'];
+export const SETTINGS_URL = ['/settings'];
+export const INDEX_URL = ['/', '/index.html'];
 
 
 export const INITIAL_ZERO_RECORD = 0;
@@ -48,6 +48,8 @@ export const POINT_3X = 3;
 export const POINT_4X = 4;
 export const POINT_6X = 6;
 export const POINT_9X = 9;
+
+export const COUNT_SHOWING_RECORDS = 10;
 
 
 //music player

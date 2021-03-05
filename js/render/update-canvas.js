@@ -9,7 +9,6 @@ function updateCanvas() {
     movePaddle();
 
     drawFieldsObjects(); 
-//     requestAnimationFrame(updateCanvas);
 }
 
 

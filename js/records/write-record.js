@@ -1,6 +1,6 @@
 import game from "../game.js";
-import storageService from "../storage-service.js";
 import recordsList from "./records.js";
+import storageService from "../storage-service.js";
 
 function writeRecord() {
 

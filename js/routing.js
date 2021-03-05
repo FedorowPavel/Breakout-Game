@@ -15,8 +15,6 @@ export function renderPage() {
         return
     }
 
-    
-
     if (INDEX_URL.includes(currentUrl)) {
         renderInitialPage();
         return

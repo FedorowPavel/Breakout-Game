@@ -2,11 +2,11 @@ import game from "../game.js";
 
 function renderFact() {
     const factContainer = document.querySelector('.fact-container');
-   
     const span = factContainer.querySelector('span');
 
     if (span) {
-         span.parentNode.removeChild(span)
+        //delete previous span
+        span.parentNode.removeChild(span)
     }
     
     const newSpan = document.createElement('span');
