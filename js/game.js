@@ -104,6 +104,7 @@ class Game {
     }
 
     startGame() {
+        this.score = 0;
         this.paused = false;
         this.started = true;
         this.gameOver = false;

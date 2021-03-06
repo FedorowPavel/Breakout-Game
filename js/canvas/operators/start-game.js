@@ -1,8 +1,6 @@
 import game from "../../game.js";
-import ball from "../objects/ball.js";
-import { toogleGameHandlers } from "../../utils.js";
+import { renderScore, toogleGameHandlers } from "../../utils.js";
 import storageService from "../../storage-service.js";
-import paddle from "../objects/paddle.js";
 
 
 function startGame(event) {
@@ -18,6 +16,7 @@ function startGame(event) {
             toogleGameHandlers();
             game.startGame();
             storageService.set('game', JSON.stringify(game))
+            renderScore();
         }
         
     }
