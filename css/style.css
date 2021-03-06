@@ -163,8 +163,11 @@ button {
   .container .info .score,
   .container .info .payer_name {
     font-size: 2rem;
-    font-weight: bold;
-    flex-basis: 50%; }
+    font-weight: bold; }
+  .container .info .score {
+    flex-basis: 30%; }
+  .container .info .payer_name {
+    flex-grow: 1; }
 .container .back-btn {
   position: relative;
   top: 0;

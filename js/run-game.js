@@ -10,7 +10,7 @@ function runGame(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
-    const userName = formData.get('name');
+    const userName = formData.get('name').trim();
 
     //show error if username is empty and run pressed
     if (!userName) {

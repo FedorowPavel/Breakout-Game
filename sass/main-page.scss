@@ -21,7 +21,15 @@
     .payer_name {
       font-size: 2rem;
       font-weight: bold;
-      flex-basis: 50%;
+      // flex-basis: 50%;
+    }
+
+    .score {
+      flex-basis: 30%;
+    }
+
+    .payer_name {
+      flex-grow: 1;
     }
   }
 

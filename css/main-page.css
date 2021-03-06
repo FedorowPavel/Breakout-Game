@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$light".
-        on line 43 of C:\_Study\JAVASCRIPT COURSE\Breakout-Game\sass\main-page.scss
+        on line 51 of C:\_Study\JAVASCRIPT COURSE\Breakout-Game\sass\main-page.scss
 
-38:     margin: 20px;
-39: 
-40:     transition: 0.2s ease;
-41: 
-42:     &:disabled {
-43:       background-color: $light;
-44:       opacity: 0.5;
-45: 
-46:       &:hover {
-47:         transition: none;
-48:       }
+46:     margin: 20px;
+47: 
+48:     transition: 0.2s ease;
+49: 
+50:     &:disabled {
+51:       background-color: $light;
+52:       opacity: 0.5;
+53: 
+54:       &:hover {
+55:         transition: none;
+56:       }
 
 Backtrace:
-C:\_Study\JAVASCRIPT COURSE\Breakout-Game\sass\main-page.scss:43
+C:\_Study\JAVASCRIPT COURSE\Breakout-Game\sass\main-page.scss:51
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -84,4 +84,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$light\".\A         on line 43 of C:\_Study\JAVASCRIPT COURSE\Breakout-Game\sass\main-page.scss\A \A 38:     margin: 20px;\A 39: \A 40:     transition: 0.2s ease;\A 41: \A 42:     &:disabled {\A 43:       background-color: $light;\A 44:       opacity: 0.5;\A 45: \A 46:       &:hover {\A 47:         transition: none;\A 48:       }"; }
+  content: "Error: Undefined variable: \"$light\".\A         on line 51 of C:\_Study\JAVASCRIPT COURSE\Breakout-Game\sass\main-page.scss\A \A 46:     margin: 20px;\A 47: \A 48:     transition: 0.2s ease;\A 49: \A 50:     &:disabled {\A 51:       background-color: $light;\A 52:       opacity: 0.5;\A 53: \A 54:       &:hover {\A 55:         transition: none;\A 56:       }"; }
