@@ -434,6 +434,15 @@ button {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+.container .records .no-records-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700; }
+  .container .records .no-records-text p {
+    margin-bottom: 20px; }
 .container ul {
   list-style-type: none;
   width: 500px;

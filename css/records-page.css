@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$light".
-        on line 20 of C:\_Study\JAVASCRIPT COURSE\Breakout-Game\sass\records-page.scss
+        on line 29 of C:\_Study\JAVASCRIPT COURSE\Breakout-Game\sass\records-page.scss
 
-15: 
-16:       &:nth-child(1) {
-17:         position: sticky;
-18:         top: 0;
-19: 
-20:         background-color: $light;
-21:       }
-22: 
-23:       &:hover {
-24:         background-color: $border-color;
-25:       }
+24: 
+25:       &:nth-child(1) {
+26:         position: sticky;
+27:         top: 0;
+28: 
+29:         background-color: $light;
+30:       }
+31: 
+32:       &:hover {
+33:         background-color: $border-color;
+34:       }
 
 Backtrace:
-C:\_Study\JAVASCRIPT COURSE\Breakout-Game\sass\records-page.scss:20
+C:\_Study\JAVASCRIPT COURSE\Breakout-Game\sass\records-page.scss:29
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -95,4 +95,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$light\".\A         on line 20 of C:\_Study\JAVASCRIPT COURSE\Breakout-Game\sass\records-page.scss\A \A 15: \A 16:       &:nth-child(1) {\A 17:         position: sticky;\A 18:         top: 0;\A 19: \A 20:         background-color: $light;\A 21:       }\A 22: \A 23:       &:hover {\A 24:         background-color: $border-color;\A 25:       }"; }
+  content: "Error: Undefined variable: \"$light\".\A         on line 29 of C:\_Study\JAVASCRIPT COURSE\Breakout-Game\sass\records-page.scss\A \A 24: \A 25:       &:nth-child(1) {\A 26:         position: sticky;\A 27:         top: 0;\A 28: \A 29:         background-color: $light;\A 30:       }\A 31: \A 32:       &:hover {\A 33:         background-color: $border-color;\A 34:       }"; }

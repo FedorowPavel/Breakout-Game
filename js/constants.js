@@ -56,7 +56,7 @@ export const NUMBERS_API_KEY = '8ef55797fbmshcc02ccb4b852999p196e82jsn3b9b33ca70
 
 //music player
 export const SONGS_LIST = ['DJShadow-This-Time', 'FaltyDL-Hip-Love', 'Kalson-Power'];
-export const START_SONG_INDEX = 0;
+export const START_SONG_INDEX = 1;
 export const AUDIO_SRC = 'audio-files';
 export const COVER_SRC = 'audio-files/labels';
 
