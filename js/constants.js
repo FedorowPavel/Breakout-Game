@@ -24,7 +24,7 @@ export const INITIAL_BRICK_OFFSET_X = 25;
 export const INITIAL_BRICK_OFFSET_Y = 50;
 
 
-export const INITIAL_BALL_POS_X = 300;
+export const INITIAL_BALL_POS_X = 300 ;
 export const INITIAL_BALL_POS_Y = 400;
 export const INITIAL_BALL_RADIUS = 10;
 export const INITIAL_BALL_dX = 4;
@@ -59,6 +59,7 @@ export const SONGS_LIST = ['DJShadow-This-Time', 'FaltyDL-Hip-Love', 'Kalson-Pow
 export const START_SONG_INDEX = 1;
 export const AUDIO_SRC = 'audio-files';
 export const COVER_SRC = 'audio-files/labels';
+
 
 
 

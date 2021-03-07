@@ -38,9 +38,15 @@ export function toogleGameHandlers() {
 
 
 export function setCheckedInputs(arr, inputValue) {
-        arr.forEach(item => {
-            if (+item.value === Math.abs(inputValue)) {
-                item.setAttribute('checked', true);
-            }
-        })
+    arr.forEach(item => {
+        if (+item.value === Math.abs(inputValue)) {
+            item.setAttribute('checked', true);
+        }
+    })
+}
+
+export  function randomInteger(min, max) {
+  
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand);
 }

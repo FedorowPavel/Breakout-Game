@@ -9,7 +9,9 @@ import {
     
 } from '../../constants.js';
 
+import { randomInteger } from '../../utils.js';
 import storageService from '../../storage-service.js';
+
 
 class Ball {
     constructor() {
@@ -35,7 +37,7 @@ class Ball {
     }
 
     setInitialPos() {
-        this.posX = INITIAL_BALL_POS_X;
+        this.posX = INITIAL_BALL_POS_X + randomInteger(-50, 50);
         this.posY = INITIAL_BALL_POS_Y;
         storageService.set('ball', JSON.stringify(ball));
     }
@@ -72,3 +74,5 @@ const ball = new Ball();
 storageService.set('ball', JSON.stringify(ball));
 
 export default ball;
+
+
