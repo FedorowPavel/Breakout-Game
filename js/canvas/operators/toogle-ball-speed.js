@@ -12,15 +12,10 @@ function toogleBallSpeed(event) {
 
         if (ball.dX && ball.dY && game.started) {
             
-            console.log(event.key);
-
             ball.stopBall();
             game.pauseGame();
 
-            console.log(pauseBtn);
-
             pauseBtn.innerHTML = 'Resume';
-            // pauseBtn.style.display = 'none'
 
             storageService.set('game', JSON.stringify(game))
             event.target.blur();
@@ -28,11 +23,10 @@ function toogleBallSpeed(event) {
             return
             
         } else {
+            
             ball.resumeBallSpeed();
             game.resumeGame();
 
-            console.log(pauseBtn.innerHTML);
-            
             pauseBtn.innerHTML = 'Pause'
 
             storageService.set('game', JSON.stringify(game))
@@ -40,12 +34,7 @@ function toogleBallSpeed(event) {
             
             return
         }
-
-        
     }
-
-    
-
 }
 
 export default toogleBallSpeed;

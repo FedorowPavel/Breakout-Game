@@ -13,7 +13,7 @@ import { BRICK_COL_COUNT, BRICK_ROW_COUNT } from "../../constants.js";
 export function moveBall() {
 
     if (game.started) {
-        //смещение шарика каждый раз когда обновляется канвас
+        //every time when canvas reloaded
         ball.posX += ball.dX;
         ball.posY += ball.dY;
     }
@@ -24,15 +24,15 @@ export function moveBall() {
         return
     }
 
-    //левая и правая стенка
+    //lest and right walls collisions
     if (
         ball.posX + ball.radius > canvas.width ||
         ball.posX - ball.radius < 0
     ) {
-        ball.dX *= -1; //меняет направление (смещение меняет знак)
+        ball.dX *= -1; //change direction
     }
 
-    //верхняя и нижняя стенки
+    //top and bottom collisions
     if (
         ball.posY + ball.radius > canvas.height ||
         ball.posY - ball.radius < 0
@@ -40,7 +40,7 @@ export function moveBall() {
         ball.dY *= -1;
     }
 
-    //платформа 
+    //padding collisions 
     if (
         ball.posX - ball.radius > paddle.posX &&
         ball.posX + ball.radius < paddle.posX + paddle.width &&
@@ -51,16 +51,16 @@ export function moveBall() {
 
     const arrayOfBricks = JSON.parse(storageService.get('arrayOfBricks'))
 
-    //попадание в блоки
+    //block's collisions
     if (arrayOfBricks) {
         arrayOfBricks.forEach(column => {
             column.forEach(item => {
                 if (item.visible) {
                     if (
-                        //левая и правая стороны каждого блок
+                        //left and right side of eacn block
                         ball.posX - ball.radius > item.x &&
                         ball.posX + ball.radius < item.x + item.width &&
-                        //верх и низ каждого блока
+                        //top and bottom of each block
                         ball.posY + ball.radius > item.y &&
                         ball.posY - ball.radius < item.y + item.height
                     ) {
@@ -84,12 +84,12 @@ export function moveBall() {
         });
     }
 
-    //если падает мимо платформы на нижнюю грань
+    //if fall not on paddle 
     if (ball.posY + ball.radius >= canvas.height) {
         gameOver();
     }
 
-    //перерисовываем блоки когда разбиты все на экране
+    //redraw blocks when all are broken
     if (game.score % (BRICK_COL_COUNT * BRICK_ROW_COUNT) === 0) {
         bricks.showAllBricks();
     }
