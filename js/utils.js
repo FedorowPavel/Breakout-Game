@@ -8,7 +8,9 @@ export function showBanner(banner) {
 export function toggleDisabled() {
     const arr = Array.from(arguments);
     arr.forEach((element) => {
-        element.toggleAttribute('disabled');
+        if (element) {
+            element.toggleAttribute('disabled');
+        }
     })
 }
 
@@ -19,10 +21,14 @@ export function changeColorMode() {
 }
 
 export function renderScore() {
+    
     const game = JSON.parse(storageService.get('game'));
     const scoreSpan = document.querySelector('.score');
 
-    scoreSpan.innerHTML = `Score: ${game.score}`
+    if (scoreSpan) {
+        scoreSpan.innerHTML = `Score: ${game.score}`
+    }
+    
 }
 
 
