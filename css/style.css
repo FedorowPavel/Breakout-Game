@@ -108,14 +108,56 @@ button {
 .container .rules {
   position: absolute;
   left: -400px;
-  top: 0;
   width: 300px;
   min-height: 100vh;
   padding: 20px;
+  padding-top: 30px;
   background-color: #444444;
   color: #efefef;
   transition: all 0.5s ease-in-out;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  z-index: 99999; }
+  .container .rules #close-rules-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    padding: 0;
+    padding-right: 10px;
+    border: none;
+    border-radius: 0;
+    background-color: #444444;
+    color: #cccccc;
+    text-align: right;
+    font-weight: 100; }
+    .container .rules #close-rules-btn:hover {
+      padding-right: 20px;
+      transition: all 0.2s ease; }
+    .container .rules #close-rules-btn:active {
+      transform: scale(1); }
+  .container .rules .handler {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px; }
+    .container .rules .handler .handler-key {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      color: #444444;
+      margin-right: 10px;
+      border-radius: 3px;
+      background-color: white;
+      border: 2px solid #cccccc; }
+      .container .rules .handler .handler-key.enter, .container .rules .handler .handler-key.space {
+        width: 90px; }
+      .container .rules .handler .handler-key:hover {
+        transition: 0.1s ease;
+        transform: scale(1.05); }
   .container .rules p,
   .container .rules h3 {
     padding-bottom: 20px; }

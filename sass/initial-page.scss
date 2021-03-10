@@ -49,15 +49,75 @@
   .rules {
     position: absolute;
     left: -400px;
-    top: 0;
     width: 300px;
     min-height: 100vh;
     padding: 20px;
+    padding-top: 30px;
 
     background-color: $dark;
     color: $light;
     transition: all 0.5s ease-in-out;
     font-size: 1.2rem;
+
+    z-index: 99999;
+
+    #close-rules-btn {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 30px;
+      width: 100%;
+      padding: 0;
+      padding-right: 10px;
+      border: none;
+      border-radius: 0;
+      background-color: $dark;
+      color: $border-color;
+      text-align: right;
+      font-weight: 100;
+
+      &:hover {
+        padding-right: 20px;
+        transition: all 0.2s ease;
+      }
+
+      &:active {
+        transform: scale(1);
+      }
+    }
+
+    .handler {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+
+      margin-bottom: 20px;
+
+      .handler-key {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        color: $dark;
+        margin-right: 10px;
+
+        border-radius: 3px;
+        background-color: $white;
+        border: 2px solid $border-color;
+
+        &.enter,
+        &.space {
+          width: 90px;
+        }
+
+        &:hover {
+          transition: 0.1s ease;
+          transform: scale(1.05);
+        }
+      }
+    }
 
     p,
     h3 {
