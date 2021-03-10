@@ -41,10 +41,9 @@ class Paddle {
 
 
     setInitialPaddlePos() {
-        if (!canvas) {
-            return
-        }
-        this.posX = canvas.width / 2 - this.width / 2;
+        setTimeout(() => {
+            this.posX = canvas.width / 2 - this.width / 2;
+        }, 0)
     }
 
     setWidth(size) {
