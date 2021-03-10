@@ -1,0 +1,27 @@
+@media screen and (max-height: 750px) and (max-width: 1200px) {
+  .container {
+    padding-left: 100px; }
+    .container .banner {
+      margin-left: -100px; } }
+@media screen and (max-height: 750px) and (max-width: 1150px) {
+  .container {
+    padding-left: 150px; }
+    .container .banner {
+      margin-left: -150px; } }
+@media screen and (max-height: 750px) and (max-width: 1100px) {
+  .container {
+    padding-left: 200px; }
+    .container .banner {
+      margin-left: -200px; } }
+@media screen and (max-height: 750px) and (max-width: 1050px) {
+  .container {
+    padding-left: 250px; }
+    .container .banner {
+      margin-left: -250px; } }
+@media screen and (max-height: 750px) and (max-width: 1050px) {
+  .container {
+    padding-left: 300px; }
+    .container .banner {
+      margin-left: -300px; } }
+
+/*# sourceMappingURL=common-media.css.map */

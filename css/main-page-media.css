@@ -1,0 +1,17 @@
+@media screen and (max-height: 750px) and (max-width: 1200px) {
+  .container .fact-container.show {
+    margin-left: 50px; } }
+@media screen and (max-height: 750px) and (max-width: 1150px) {
+  .container .fact-container.show {
+    margin-left: 75px; } }
+@media screen and (max-height: 750px) and (max-width: 1100px) {
+  .container .fact-container.show {
+    margin-left: 100px; } }
+@media screen and (max-height: 750px) and (max-width: 1050px) {
+  .container .fact-container.show {
+    margin-left: 125px; } }
+@media screen and (max-height: 750px) and (max-width: 1050px) {
+  .container .fact-container.show {
+    margin-left: 150px; } }
+
+/*# sourceMappingURL=main-page-media.css.map */

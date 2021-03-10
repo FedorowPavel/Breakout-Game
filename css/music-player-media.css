@@ -1,0 +1,10 @@
+@media screen and (max-height: 750px) {
+  .music-container.play .music-info {
+    opacity: 1;
+    transform: translateX(0) translateY(-100%);
+    padding-left: 50%;
+    white-space: nowrap; }
+    .music-container.play .music-info h4 {
+      overflow: hidden; } }
+
+/*# sourceMappingURL=music-player-media.css.map */

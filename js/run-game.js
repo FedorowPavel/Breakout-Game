@@ -1,5 +1,5 @@
 import game from './game.js';
-import { renderScore, showBanner } from './utils.js';
+import { showBanner } from './utils.js';
 import { navigateToUrl } from './routing.js';
 import sounds from './audio/audio-sounds.js';
 import recordsList from './records/records.js'

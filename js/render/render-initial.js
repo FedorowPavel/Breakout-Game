@@ -10,6 +10,12 @@ function renderInitialPage() {
     const container = document.getElementById('container');
     container.innerHTML = startTemplate;
 
+    //prevent error when we render initial page first time
+    //browser defence from sounds when page loaded
+    if (game.currentPlayer) {
+        sounds.renderPageSound();
+    }
+
     game.resetGame();
 
     storageService.set('game', JSON.stringify(game))
@@ -17,8 +23,6 @@ function renderInitialPage() {
     bricks.clearField();
 
     setInitialPageEventListeners()
-
-    sounds.renderPageSound();
 }
 
 export default renderInitialPage;
