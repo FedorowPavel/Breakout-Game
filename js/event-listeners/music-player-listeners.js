@@ -44,7 +44,7 @@ export function setMusicPlayerEventListeners() {
         function () { musicPlayer.nextSong(currentSong) }
     );
 
-    volumeBtn.addEventListener('mousedown', musicPlayer.togleVolume)
+    volumeBtn.addEventListener('mousedown', musicPlayer.toggleVolume)
 
     volumeSizeContainer.addEventListener('mousedown', musicPlayer.setVolumeValue)
 }

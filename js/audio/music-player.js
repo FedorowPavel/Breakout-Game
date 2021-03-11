@@ -134,7 +134,7 @@ class MusicPlayer {
         volumeSize.style.height = `${volumePrecents}%`
     }
 
-    togleVolume() {
+    toggleVolume() {
         if (audio.volume) {
 
             volumeBtn.querySelector('i.fas').classList.remove('fa-volume-up');
