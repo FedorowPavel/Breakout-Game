@@ -8,6 +8,7 @@ export const INITIAL_ZERO_RECORD = 0;
 
 
 export const INITIAL_CANVAS_COLOR = '#444444';
+export const CANVAS_INTERVAL = 18;
 
 
 export const BRICK_COL_COUNT = 7;

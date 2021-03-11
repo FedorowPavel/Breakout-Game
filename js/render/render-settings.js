@@ -6,6 +6,7 @@ import paddle from "../canvas/objects/paddle.js";
 import storageService from "../storage-service.js";
 import { setCheckedInputs, showBanner } from "../utils.js";
 import settingsTemplate from "../templates/pages/settings-page.js";
+import { MAIN_URL } from "../constants.js";
 
 
 
@@ -56,7 +57,7 @@ function submitSettings(event) {
     paddle.setInitialPaddlePos()
 
 
-    navigateToUrl(`/main`);
+    navigateToUrl(MAIN_URL[0]);
 
     event.target.reset();
 }

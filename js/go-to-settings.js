@@ -1,8 +1,9 @@
+import { SETTINGS_URL } from "./constants.js";
 import { navigateToUrl } from "./routing.js";
 
 function goToSettings(intId) {
     clearInterval(intId);
-    navigateToUrl('/settings');
+    navigateToUrl(SETTINGS_URL[0]);
     return
 }
 

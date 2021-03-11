@@ -1,10 +1,10 @@
+import game from '../game.js';
 import sounds from '../audio/audio-sounds.js';
 import updateCanvas from './update-canvas.js';
+import { CANVAS_INTERVAL } from '../constants.js';
 import renderInitialPage from './render-initial.js';
 import { showBanner, toggleDisabled } from '../utils.js';
 import mainTemplate from '../templates/pages/main-page.js';
-
-import game from '../game.js';
 import { setMainPageListeners } from '../event-listeners/main-page-listeners.js';
 
 
@@ -30,7 +30,7 @@ function renderMainPage() {
     
 
     //update canvas and animation
-    var intId = setInterval(() => { updateCanvas() }, 18);
+    let intId = setInterval(() => { updateCanvas() }, CANVAS_INTERVAL);
     
     setMainPageListeners(intId)
 

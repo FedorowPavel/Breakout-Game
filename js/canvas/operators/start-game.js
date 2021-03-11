@@ -5,6 +5,12 @@ import storageService from "../../storage-service.js";
 
 function startGame(event) {
     const factContainer = document.querySelector('.fact-container');
+    const canvas = document.getElementById('canvas');
+
+    //if we not on main page keydown dont work
+    if (!canvas) {
+        return
+    }
 
     if (factContainer) {
         factContainer.classList.remove('show');

@@ -1,15 +1,15 @@
 import storageService from '../../storage-service.js';
 import {
+
     BRICK_COL_COUNT,
     BRICK_ROW_COUNT,
-
     INITIAL_CANVAS_COLOR,
-    
     INITIAL_BRICK_WIDTH,
     INITIAL_BRICK_HEIGHT,
     INITIAL_BRICK_PADDING,
     INITIAL_BRICK_OFFSET_X,
     INITIAL_BRICK_OFFSET_Y
+
 } from '../../constants.js';
 
 
@@ -41,11 +41,12 @@ class Brick {
 
         if (arrOfBricks) {
 
-            arrOfBricks.forEach(column => {
-                column.forEach(item => item.visible = true);
+            arrOfBricks
+                .forEach(column => {
+                    column
+                        .forEach(item => item.visible = true);
             });
         }
-        
 
         storageService.set('arrayOfBricks', JSON.stringify(arrOfBricks))
     }

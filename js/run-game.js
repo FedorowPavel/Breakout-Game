@@ -4,6 +4,7 @@ import { navigateToUrl } from './routing.js';
 import sounds from './audio/audio-sounds.js';
 import recordsList from './records/records.js'
 import storageService from './storage-service.js';
+import { MAIN_URL } from './constants.js';
 
 
 function runGame(event) {
@@ -27,7 +28,7 @@ function runGame(event) {
     storageService.set('game', JSON.stringify(game))
     storageService.set('records', JSON.stringify(recordsList.records))
 
-    navigateToUrl(`/main`);
+    navigateToUrl(MAIN_URL[0]);
 
     event.target.reset();
 }

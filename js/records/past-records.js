@@ -34,11 +34,13 @@ function renderRecords(countToShow) {
 
             const newListItem = document.createElement('li');
 
+            const dateWithoutMs = item.date.slice(0, item.date.length-3)
+
             newListItem.innerHTML = `
 
                 <span class="index-col">${place+1}</span>
                 <span class="record-col">${item.record}</span>
-                <span class="player-col">${item.player} <span class="date-col">${item.date}</span></span>
+                <span class="player-col">${item.player} <span class="date-col">${dateWithoutMs}</span></span>
             
             `
             recordsListing.appendChild(newListItem);

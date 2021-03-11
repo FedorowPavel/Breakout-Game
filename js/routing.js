@@ -1,9 +1,16 @@
-import { INDEX_URL, MAIN_URL, RECORDS_URL, SETTINGS_URL } from './constants.js';
+import {
+    
+    INDEX_URL,
+    MAIN_URL,
+    RECORDS_URL,
+    SETTINGS_URL
 
+} from './constants.js';
+
+import game from './game.js';
 import renderMainPage from './render/render-main.js';
 import renderInitialPage from './render/render-initial.js';
 import renderSettingsPage from './render/render-settings.js';
-import game from './game.js';
 import renderRecordsPage from './render/render-records.js';
 
 export function renderPage() {
