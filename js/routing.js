@@ -16,8 +16,9 @@ import renderRecordsPage from './render/render-records.js';
 export function renderPage() {
     const { pathname: currentUrl } = window.location;
 
+
     if (!game.currentPlayer) {
-        window.history.pushState({}, null , window.location.origin + '/');
+        window.history.pushState({}, null , window.location.origin + INDEX_URL[0]);
         renderInitialPage();
         return
     }

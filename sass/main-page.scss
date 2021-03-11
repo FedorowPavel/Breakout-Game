@@ -21,7 +21,6 @@
     .payer_name {
       font-size: 2rem;
       font-weight: bold;
-      // flex-basis: 50%;
     }
 
     .score {
@@ -178,13 +177,11 @@
       top: 0;
       left: 0;
       transform: translate(-50%, -50%);
-      // float: left;
       background-color: $white;
       font-size: 2rem;
     }
 
     &.show {
-      // bottom: 20px;
       transition: all 0.3s ease;
       transform: translate(-50%, -50%) scale(1);
       opacity: 1;
